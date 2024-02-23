@@ -53,7 +53,16 @@ button {
     background-color: red;
 }
 
+.nome-tarefa {
+    text-decoration: line-through;
+}
+
 ul {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-left: 50%;
+}
+
+.nome-tarefa p {
+    cursor: pointer;
 }

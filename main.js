@@ -10,12 +10,14 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
         const nomeDoUsuario = $('#nome-aluno').val();
-        const novoItem = $(`<li style="text-decoration: line-through"></li>`);
-        $(`<p
-        <div class="nome-tarefa">
-        <p>${nomeDoUsuario}</p>
-        </div>
-        `).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
+        const novoItem = $('<li></li>');
+        const nomeTarefa = $(`<div class="nome-tarefa"><p>${nomeDoUsuario}</p></div>`);
+
+        nomeTarefa.click(function() {
+            $(this).toggleClass('nome-tarefa');
+        });
+
+        nomeTarefa.appendTo(novoItem);
+        novoItem.appendTo('ul');
     })
 })
