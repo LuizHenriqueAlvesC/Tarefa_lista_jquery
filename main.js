@@ -14,7 +14,7 @@ $(document).ready(function() {
         const nomeTarefa = $(`<div class="nome-tarefa"><p>${nomeDoUsuario}</p></div>`);
 
         nomeTarefa.click(function() {
-            $(this).toggleClass('nome-tarefa');
+            $(this).toggleClass('riscado');
         });
 
         nomeTarefa.appendTo(novoItem);
