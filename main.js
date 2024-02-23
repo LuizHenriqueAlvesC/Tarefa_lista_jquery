@@ -9,8 +9,13 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e) {
         e.preventDefault();
-        const nomeDoUsuario = $('#nome-aluno, #tarefa').val();
+        const nomeDoUsuario = $('#nome-aluno').val();
         const novoItem = $(`<li style="text-decoration: line-through"></li>`);
-        $(`${nomeDoUsuario}`).appendTo(novoItem);
+        $(`<p
+        <div class="nome-tarefa">
+        <p>${nomeDoUsuario}</p>
+        </div>
+        `).appendTo(novoItem);
+        $(novoItem).appendTo('ul');
     })
 })

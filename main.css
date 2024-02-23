@@ -24,16 +24,18 @@ header img {
 }
 
 form {
-    background-color: blanchedalmond;
+    background-color:antiquewhite;
     padding: 16px 0;
     text-align: center;
     display: none;
 }
 
-form input,
-form textarea {
-    margin-left: 670px;
-    display: flex
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
 }
 
 button {
@@ -47,10 +49,11 @@ button {
     cursor: pointer;
 }
 
-form textarea {
-    resize: none;
-}
-
 #botao-cancelar {
     background-color: red;
+}
+
+ul {
+    justify-content: center;
+    align-items: center;
 }
