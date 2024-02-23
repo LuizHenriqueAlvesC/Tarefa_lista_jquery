@@ -61,12 +61,5 @@ ul {
     align-items: center;
     justify-content: center;
     padding-left: 50%;
-}
-
-ul li {
-    list-style: none;
-}
-
-.nome-tarefa p {
     cursor: pointer;
 }
